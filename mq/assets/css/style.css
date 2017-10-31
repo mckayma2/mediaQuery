@@ -1,0 +1,481 @@
+/* =============================
+	css Mario Mackay
+   ============================= */
+
+/* Body tag*/
+
+body
+{
+width:75%;
+position:relative;
+background-color: lightgrey;
+font-family:arial;
+margin:0 auto;
+}
+
+/*header tag */
+header
+{
+width:100%;
+padding:4% 2% 6% 2%;
+background-color: white;
+}
+/* header tag links */
+header a
+{
+display:inline;
+text-decoration:none;
+color:grey;
+border-left: 0.05px solid grey;
+float:right;
+padding:2%;
+}
+/*name box on header tag */
+#name
+{
+display:inline;
+background-color: cadetblue;
+color:white;
+padding:6%;
+margin:0;
+margin-left: 10%;
+font-size:180%;
+}
+
+/*name box hover animation */
+#name:hover
+{
+transition: background .9s ease-in;
+background-color:goldenrod;
+}
+
+/*name box hover delay transition */
+header a:hover
+{
+transition: background .9s ease-in;
+background-color: goldenrod;
+color:white;
+}
+
+/*body contain tag */
+#container
+{
+background-color: white;
+position:relative;
+width:100%;
+height:95%;
+padding:2%;
+box-shadow: inset 1.8px 1.2px 1px grey;
+background-image:url("../img/pgbkg.jpg");
+background-size:cover;
+}
+
+/*about me box */
+#aboutMeBox
+{
+float:left;
+width:55%;
+height:75%;
+margin: 0% 0% 15% 10%;
+background-color: white;
+overflow: scroll;
+padding:2%;
+line-height: 150%;
+font-size: 110%;
+letter-spacing: 1px;
+}
+
+/*about me box image */
+#aboutMeBox img
+{
+width:50%;
+margin: 0% 25% 2% 25%;
+box-shadow: 1.8px 1.2px 1px black;
+}
+
+/*connect with me box */
+#connectWithMeBox
+{
+float:right;
+padding:2%;
+width:25%;
+background-color: white;
+}
+
+/*connect with me box images */
+#connectWithMeBox img
+{
+width:20%;
+height20%;
+}
+
+/*connect with me box hover animations */
+#connectWithMeBox img:hover
+{
+transform: rotate(7deg);
+}
+
+/*footer of page */
+footer
+{
+position:fixed;
+bottom:0;
+left:0;
+background-color: darkgrey;
+width:100%;
+padding:2%;
+color:white;
+text-align:center;
+fontsize:100%;
+}
+
+/*h2 headers in all boxes on page */
+#connectWithMeBox h2, #aboutMeBox h2, #contactBox h2 
+{
+font-size:140%;
+color:cadetblue;
+border-bottom: 1px solid grey;
+padding:0% 0% 3% 0%;
+}
+
+/*portfolio box */
+#portfolioBox
+{
+float:left;
+width:45%;
+height:75%;
+margin: 0% 0% 15% 10%;
+background-color: white;
+overflow: scroll;
+padding:2%;
+position:relative;
+}
+
+/*portfolio box images */
+#portfolioBox img
+{
+width:100%;
+margin: 2% auto;
+transition: all .2s ease-in-out;
+box-shadow:1.5px 1.5px 1px black;
+}
+
+/*portfolio box hover effects */
+#portfolioBox img:hover 
+{ 
+transform: scale(1.1); 
+}
+
+/*portfolio project boxes */
+#proj1 h3, #proj2 h3, #proj3 h3, #proj4 h3
+{
+margin: 0 auto;
+padding: 2% 0%;
+background-color:cadetblue;
+color:white;
+text-align:center;
+position:absolute;
+left:0;
+bottom:12%;
+width:100%;
+}
+/*portfolio project boxes position */
+#proj1, #proj2, #proj3, #proj4
+{
+position:relative;
+}
+
+/* contact box */
+#contactBox
+{
+float:left;
+width:50%;
+height:85%;
+margin: 0% 0% 15% 10%;
+background-color: white;
+padding:2%;
+position:relative;
+}
+
+/* =============================
+	 Media Queries
+   ============================= */
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: lightgrey;
+	width:85%;
+	height:1024px;
+    }
+
+/*about me box */
+#aboutMeBox
+{
+float:none;
+display:block;
+width:95%;
+height:78%;
+margin: 2% auto;
+background-color: white;
+overflow: scroll;
+padding:2%;
+line-height: 150%;
+font-size: 120%;
+letter-spacing: 1px;
+}
+/*connect with me box */
+#connectWithMeBox
+{
+float:none;
+padding:2%;
+display:block;
+margin: 2% auto;
+width:65%;
+background-color: white;
+}
+/*about me box image */
+#aboutMeBox img
+{
+float:left;
+margin:0 auto;
+margin:2%;
+width:60%;
+box-shadow: 1.8px 1.2px 1px black;
+}
+/*h2 headers in all boxes on page */
+#connectWithMeBox h2, #aboutMeBox h2, #contactBox h2 
+{
+font-size:140%;
+color:cadetblue;
+border-bottom: 1px solid grey;
+padding:0% 0% 1% 0%;
+}
+/*connect with me box images */
+#connectWithMeBox img
+{
+width:12%;
+height12%;
+}
+/*body contain tag */
+#container
+{
+background-color: white;
+position:relative;
+width:100%;
+height:100%;
+padding:2%;
+box-shadow: inset 1.8px 1.2px 1px grey;
+background-image:url("../img/pgbkg.jpg");
+background-size:cover;
+}
+header a
+{
+
+margin-left:4%;
+font-size:110%;
+}
+/*name box on header tag */
+#name
+{
+display:inline;
+background-color: cadetblue;
+color:white;
+padding:6%;
+margin:0;
+margin-left: 5%;
+font-size:160%;
+}
+/*footer of page */
+footer
+{
+position:fixed;
+bottom:0;
+left:0;
+background-color: darkgrey;
+width:100%;
+padding:2%;
+color:white;
+text-align:center;
+fontsize:100%;
+}
+/*portfolio box */
+#portfolioBox
+{
+float:none;
+width:85%;
+height:75%;
+display:block;
+margin:0 auto;
+background-color: white;
+overflow: scroll;
+padding:2%;
+position:relative;
+}
+/* contact box */
+#contactBox
+{
+float:none;
+width:75%;
+height:75%;
+display:block;
+margin: 0 auto;
+background-color: white;
+padding:2%;
+position:relative;
+}
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+    /* header tag links */
+
+body{
+background-color: lightgrey;
+width:640px;
+height:1024px;
+margin:0 auto;
+margin-left: 20px;
+
+}
+
+header a
+{
+text-decoration:none;
+color:grey;
+padding: 4%;
+float:none;
+margin-left:0%;
+font-size:120%;
+}
+
+#lnk{
+display:block;
+padding:3%;
+text-align:center;	
+margin: 0% auto;
+
+}
+
+/*name box on header tag */
+#name
+{
+display:block;
+background-color: cadetblue;
+color:white;
+padding:3% 0% 3% 0%;
+margin:0 auto;
+text-align:center;
+font-size:160%;
+width:100%;
+}
+/*header tag */
+header
+{
+width:100%;
+padding:4% 2% 4% 2%;
+background-color: white;
+}
+
+/*about me box */
+#aboutMeBox
+{
+float:none;
+display:block;
+margin:0 auto;
+width:90%;
+height:75%;
+background-color: white;
+overflow: scroll;
+padding:2%;
+line-height: 150%;
+font-size: 140%;
+letter-spacing: 1px;
+}
+/*connect with me box */
+#connectWithMeBox
+{
+float:none;
+padding:2%;
+width:75%;
+background-color: white;
+display:block;
+margin:3% auto;
+}
+/*about me box image */
+#aboutMeBox img
+{
+width:65%;
+float:none;
+display:block;
+margin: 0% auto;
+box-shadow: 1.8px 1.2px 1px black;
+}
+/*connect with me box images */
+#connectWithMeBox img
+{
+width:12%;
+height12%;
+}
+/*h2 headers in all boxes on page */
+#connectWithMeBox h2, #aboutMeBox h2, #contactBox h2 
+{
+font-size:100%;
+color:cadetblue;
+border-bottom: 1px solid grey;
+padding:0% 0% 1% 0%;
+}
+/*name box on header tag */
+#name
+{
+display:block;
+background-color: cadetblue;
+color:white;
+padding:3% 0% 3% 0%;
+margin:0 auto;
+text-align:center;
+font-size:120%;
+width:100%;
+}
+
+/*footer of page */
+footer
+{
+position:fixed;
+bottom:0;
+left:0;
+background-color: darkgrey;
+width:100%;
+padding:2%;
+color:white;
+text-align:center;
+fontsize:100%;
+}
+/*portfolio box */
+#portfolioBox
+{
+float:none;
+display:block;
+margin: 0 auto;
+width:85%;
+height:75%;
+background-color: white;
+overflow: scroll;
+padding:2%;
+position:relative;
+}
+/* contact box */
+#contactBox
+{
+float:none;
+width:75%;
+height:75%;
+display:block;
+margin: 0 auto;
+background-color: white;
+padding:2%;
+position:relative;
+}
+
+}
